@@ -1,0 +1,11 @@
+# 参考资料原文（版权书籍的文本提取，不上传）
+.source/
+
+# WorkBuddy 项目记忆
+.workbuddy/
+
+# 临时文件
+*.log
+.preview_*.png
+.DS_Store
+Thumbs.db

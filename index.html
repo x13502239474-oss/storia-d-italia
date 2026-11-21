@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#5b2333">
+<title>意大利史诗 · STORIA D'ITALIA</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <!-- 顶部导航 -->
+  <header class="topbar" id="topbar">
+    <button class="icon-btn" id="btn-back" aria-label="返回">‹</button>
+    <div class="topbar-title" id="topbar-title">意大利史诗</div>
+    <button class="icon-btn" id="btn-menu" aria-label="目录">☰</button>
+  </header>
+
+  <!-- 主视图 -->
+  <main id="view"></main>
+
+  <!-- 底部导航（首页/时间轴/人物/地图/搜索） -->
+  <nav class="tabbar" id="tabbar">
+    <button class="tab" data-tab="home"><span class="tab-ico">⌂</span><span>首页</span></button>
+    <button class="tab" data-tab="timeline"><span class="tab-ico">◈</span><span>时间轴</span></button>
+    <button class="tab" data-tab="people"><span class="tab-ico">❦</span><span>人物</span></button>
+    <button class="tab" data-tab="maps"><span class="tab-ico">🗺</span><span>地图</span></button>
+    <button class="tab" data-tab="search"><span class="tab-ico">⌕</span><span>搜索</span></button>
+  </nav>
+</div>
+
+<!-- 抽屉目录 -->
+<div class="drawer" id="drawer">
+  <div class="drawer-mask" id="drawer-mask"></div>
+  <aside class="drawer-panel" id="drawer-panel">
+    <div class="drawer-head">
+      <span class="drawer-title">目录 · INDICE</span>
+      <button class="icon-btn" id="btn-close-drawer">×</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </aside>
+</div>
+
+<!-- 图片灯箱 -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-mask" id="lightbox-mask"></div>
+  <figure class="lightbox-fig">
+    <img id="lightbox-img" src="" alt="">
+    <figcaption id="lightbox-cap"></figcaption>
+    <button class="lightbox-close" id="lightbox-close">×</button>
+  </figure>
+</div>
+
+<script src="data/core.js"></script>
+<script src="data/timeline.js"></script>
+<script src="data/part1.js"></script>
+<script src="data/part2.js"></script>
+<script src="data/part3.js"></script>
+<script src="data/part4.js"></script>
+<script src="data/part5.js"></script>
+<script src="data/part6.js"></script>
+<script src="data/part7.js"></script>
+<script src="data/part8.js"></script>
+<script src="data/topics.js"></script>
+<script src="data/people.js"></script>
+<script src="data/maps.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
